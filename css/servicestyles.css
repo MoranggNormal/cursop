@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rajdhani&display=swap');
+  /* essas são apenas fontes */
+
+a{
+    text-decoration: none;
+} /* Isso tira a sublimação de todos os elementos a. */
+
+body{
+    background: url("../images/mathback.jpg");
+    background-size: cover;
+    height: 100vh;
+} /* imagem de fundo com atributo de cobrir toda a página num raio de 100vh da tela */
+.nav {
+    height: 50px;
+    background-color: #c6ef21c7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px 14px rgba(0,0,0,0.44);
+
+
+} /* muda altura para 50 pixels / muda a cor do background / sombra ao redor */
+
+.nav a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+} /* muda a cor e tipo de todos os a para branco */
+
+.nav div{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    padding: 15px;
+    font-size: 20px;
+} /* pelo o que entendi isso trava o Math Lab para esquerda */
+
+.nav ul{
+    position: absolute;
+    right: 5px;
+} /* e esse trava a ul na direita */
+
+.nav ul li{
+    display: inline-block;
+} /* esse deixa a o conteudo da ul lado a lado */
+
+.nav ul li a{
+    padding: 15px;
+} /* espaçeamento de 5 pixels entre o conteudo da ul */
+
+ /* AQUI TERMINA A NAV BAR */
+
+ .text-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+    width: 500px;
+    margin: 0 auto 0 auto;
+} /* isso leva o conteudo da class text-container para o meio da página / muda cor de fonte */
+
+
+.text-container h1{
+   text-align: center;
+   font-family: 'Piazzolla', sans-serif;
+   padding: 15px;
+   background-color: #c6ef21b0;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   box-shadow: 0px -4px 30px -4px rgba(0,0,0,0.75);
+} /* estilização de texto */
+
+.text-container p{
+    text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    background-color: #c6ef21b0;
+    box-shadow: 0px 4px 30px -4px rgba(0,0,0,0.75);
+ } /* estilização de texto */
+
+ .lorem{
+    text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #c6ef21b0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 30px -4px rgba(0,0,0,0.75);
+ } /* estilização de texto */
+
+ @media only screen and (max-width: 768px) {
+    .text-container {
+      width: 40vh;
+      margin: 130px auto 0 auto;
+    }
+  } /* responsivo */
